@@ -1,0 +1,15 @@
+projektowanie aplikacji webowych to proces który obejmuje: 
+	-etapy technologiczne, 
+	-oprogramowanie, 
+	-server, 
+	-interface, 
+	-funkcjonalność
+tworząc aplikacjie webowe zwykle wybieramy frameorki, ktore charakteryzują się dostępnością gotowych rozwiązań.‏
+
+struktura aplikacji webowej: interface użytkownika -> aplikacja -> baza danych
+
+warstwa klienta (odpowiada za interface użytkownika oraz interakcję z użytkownikiem)
+
+warstwa aplikacji (odpowiada na żądania klientów i tworzy dokument dynamiczny)
+
+warstwa danych (odpowiada za udostępnianie danych i informacji umieszczanych w dokumentach dynamicznych, może być to sql, mysql)
