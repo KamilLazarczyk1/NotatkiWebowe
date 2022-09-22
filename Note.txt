@@ -13,3 +13,62 @@ warstwa klienta (odpowiada za interface użytkownika oraz interakcję z użytkow
 warstwa aplikacji (odpowiada na żądania klientów i tworzy dokument dynamiczny)
 
 warstwa danych (odpowiada za udostępnianie danych i informacji umieszczanych w dokumentach dynamicznych, może być to sql, mysql)
+
+JQuery to biblioteka js ktora ulatwia manipulacje elementami i zdarzeniami w dokumencie HTML.
+Upraszcza wybieranie elementów z drzewa DOM. Manipulacja nimi (kopiowanie, usuwanie, ukrywanie, zmiana właściwości).
+W praktyce jQuery dostarcza wiele gotowych często wykorzystywanych funkcji js, dzięki czemu:
+- upraszcza ułatwia, przyspiesza pracę programiście
+- zwiększa kompatybilność kodu pod kątem wielu platform, pod kątem wielu przeglądarek
+
+Przykłady:
+Przykład 1: wykryć moment załadowania strony za pomocą ready:
+
+$(document).ready(function() {
+       /* ciało funkcji */
+ });
+zamiast pisać w Vanilla JS:
+
+document.addEventListener('DOMContentLoaded', function() {
+       /* ciało funkcji */ 
+ });
+To dopiero początek, przyjrzyjmy się kolejnemu przykładowi:
+
+Przykład 2: Wykrycie zdarzenia click to w jQuery jedno słowo:
+
+$('a').click(function() {
+       /* ciało funkcji */ 
+ });
+w VanilllaJS trzeba napisać taki kod:
+
+[].forEach.call(document.querySelectorAll('a'), function(el) {
+   el.addEventListener('click', function() {
+      /* ciało funkcji */  
+   })
+ })
+Przykład 3: korzystanie z AJAX, metoda POST:
+
+$.post('skrypt.php', { user: user }, function (output) {
+   /* ciało funkcji */
+ })
+W Vanilla JS to około 5 razy więcej kodu:
+
+var httpRequest = new XMLHttpRequest()
+httpRequest.onreadystatechange = function (output) {
+   /* ciało funkcji */ 
+}
+httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+httpRequest.open('POST', url)
+httpRequest.send('user=' + encodeURIComponent(user))
+
+Czy warto używać jQuery? Zbierzmy najważniejsze zalety:
+
+przyspieszenie pracy programistów a tym samym zmniejszenie czasu pracy i kosztu projektów,
+ułatwienie programowania w JavaScript za pomocą gotowych szkieletów przydatnych funkcji a to zwiększa funkcjonalność projektów niskim kosztem,
+prostota działania, która powoduje że po chwili nauki jesteśmy w stanie tworzyć przydatne aplikacje za pomocą JavaScript. 
+Krzyżowa kompatybilność aplikacji w szerokim spektrum przeglądarek,
+
+Wady:
+- Duża ilość plików
+- cięższe pliki które wymagają optymalizacji (od strony programistów)
+- nowe wersje które są publikowane w krótkim czasie
+
