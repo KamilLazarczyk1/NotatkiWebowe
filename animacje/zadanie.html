@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async defer>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#animate1").animate({
+                    right: '100px',
+                });
+                $("#animate2").animate({
+                    left: '100px'
+                });
+                $("#animate1").css( "background-color", "yellow");
+                $("#animate2").css( "background-color", "green");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+        <div style="position: absolute; left: 50%;">
+            <button>Pokaż animacje</button> <br>
+            <div style="margin-bottom: 300px;">
+                <div id="animate1" style="background:red;height:200px;width:200px;position:absolute;"></div>
+            </div>
+            <div>
+                <div id="animate2" style="background-color:blue;height:200px;width:200px;position:absolute;"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>
