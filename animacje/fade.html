@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#box1").fadeIn();
+    $("#box2").fadeIn("slow");
+    $("#box3").fadeIn(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Efekt fadeIn</p>
+<button>Pokaż parametry</button><br><br>
+
+<div id="box1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="box2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="box3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+</html>

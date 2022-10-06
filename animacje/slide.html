@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#slide").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #slide {
+  padding: 5px;
+  text-align: center;
+  background-color: #00ddcc;
+  border: solid 1px #fff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="slide">
+    Kliknij, aby przesunąć panel w dół lub w górę</div>
+<div id="panel">Witaj !</div>
+
+</body>
+</html>
