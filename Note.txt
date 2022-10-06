@@ -72,3 +72,8 @@ Wady:
 - cięższe pliki które wymagają optymalizacji (od strony programistów)
 - nowe wersje które są publikowane w krótkim czasie
 
+
+clearQueue - usuwa z kolejki wszystkie elementy animacji, które nie zostały wcześniej uruchomione
+delay - cofa wcześniej wykonany efekt po określonym upływie czasu
+dequeue - gdy ta metoda jest wywoływana, wtedy kolejna metoda animacji jest ściągana ze stosu i wykonywana
+
