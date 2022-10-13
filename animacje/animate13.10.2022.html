@@ -11,10 +11,10 @@
         $(document).ready(function () {
             $("button").click(function () {
                 $("#animate").animate({
-                    height: '15px',
-                    width: '15px'
+                    height: '30px',
+                    width: '30px'
                 });
-                $("#animate").css( "background-color", "blue");
+                $("#animate").css( "background-color", "red");
             });
         });
     </script>
@@ -22,7 +22,7 @@
 
 <body>
     <button>Pokaż animacje</button>
-    <div id="animate" style="background:red;height:30px;width:30px;position:absolute;"></div>
+    <div id="animate" style="background:blue;height:15px;width:15px;position:absolute;"></div>
 </body>
 
 </html>
