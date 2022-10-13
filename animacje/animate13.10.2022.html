@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja 13.10.2022</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async defer>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#animate").animate({
+                    height: '15px',
+                    width: '15px'
+                });
+                $("#animate").css( "background-color", "blue");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Pokaż animacje</button>
+    <div id="animate" style="background:red;height:30px;width:30px;position:absolute;"></div>
+</body>
+
+</html>
