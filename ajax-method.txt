@@ -1,0 +1,14 @@
+jQuery Ajax Methods:
+ajax() 
+Post() 
+getJSON() 
+getScript() 
+load() 
+
+ajax() Wysyła asynchroniczne żądanie http do serwera.
+get() Wysyła żądanie http GET w celu załadowania danych z serwera.
+Post() Sends http POST request to submit or load the data to the server. 
+getJSON() Wysyła żądanie http GET w celu załadowania danych zakodowanych w formacie JSON z serwera.
+getScript() Wysyła żądanie http GET w celu załadowania pliku JavaScript z serwera, a następnie je wykonuje.
+load() Wysyła żądanie http w celu załadowania treści html lub tekstowej z serwera i dodania ich do elementów DOM.
+

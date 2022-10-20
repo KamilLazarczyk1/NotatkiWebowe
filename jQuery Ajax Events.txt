@@ -1,0 +1,16 @@
+jQuery Ajax Events 
+
+ajaxComplete() 
+ajaxError() 
+ajaxSend() 
+ajaxStart() 
+ajaxStop() 
+ajaxSuccess() 
+
+ajaxComplete() 	Zarejestruj funkcję obsługi, która ma być wywoływana po zakończeniu żądań Ajax.
+ajaxError() 	Zarejestruj funkcję obsługi, która ma być wywoływana, gdy Ajax zażąda zakończenia z błędem.
+ajaxSend() 	Zarejestruj funkcję obsługi, która ma być wywołana przed wysłaniem żądania Ajax.
+ajaxStart() 	Zarejestruj funkcję obsługi, która ma zostać wywołana, gdy rozpocznie się pierwsze żądanie Ajax.
+ajaxStop() 	Zarejestruj funkcję obsługi, która ma być wywoływana po zakończeniu wszystkich żądań Ajax.
+ajaxSuccess() 	Zarejestruj funkcję obsługi, która ma być wywoływana, gdy żądanie Ajax zakończy się pomyślnie.
+
