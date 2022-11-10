@@ -77,3 +77,17 @@ clearQueue - usuwa z kolejki wszystkie elementy animacji, które nie zostały wc
 delay - cofa wcześniej wykonany efekt po określonym upływie czasu
 dequeue - gdy ta metoda jest wywoływana, wtedy kolejna metoda animacji jest ściągana ze stosu i wykonywana
 
+
+
+
+===========================================================================================================
+						   REACT
+===========================================================================================================
+
+Co to jest React?
+React to niekompletny framework/biblioteka
+React opiera sie na JS, korzysta z własnego serwera (routing, domyślnie port 3000)
+W skład Reacta wchodzą:
+	-komponenty (są to klocki aplikacji, które później możemy uruchomić w naszej aplikacji),
+	-biblioteki React i JS 
+	-propsy (atrybuty; to obiekt, który zawiera wszystkie atrybuty)  
